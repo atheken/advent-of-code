@@ -7,6 +7,11 @@ public static class HelperExtensions
     internal static string[] ReadInputLines(this string inputName) => 
         File.ReadAllLines(inputName.FindInput());
 
+    internal static int[] ReadSingleIntCsv(this string inputName) => 
+        File.ReadAllLines(inputName.FindInput()).First().Split(',')
+            .Select(int.Parse).ToArray();
+
+    
     internal static string FindInput(this string inputName, string? path = null)
     {
         path ??= Assembly.GetExecutingAssembly().Location;

@@ -15,7 +15,7 @@ public class Day1
     [Fact]
     public void Puzzle1()
     {
-        var input = File.ReadLines("puzzle1.txt".FindInput());
+        var input = "day1.txt".ReadInputLines();
         int? previous = null;
         var increasingCount = 0;
         
@@ -33,7 +33,7 @@ public class Day1
     [Fact]
     public void Puzzle2()
     {
-        var input = File.ReadLines("puzzle2.txt".FindInput());
+        var input = "day1.txt".ReadInputLines();
         var window = new Queue<int>();
         int? previous = null;
         

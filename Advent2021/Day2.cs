@@ -18,7 +18,7 @@ public class Day2
     {
         var regex = new Regex("^(?<command>[^\\d]+) (?<magnitude>[\\d]+)$", RegexOptions.ExplicitCapture);
         
-        var commands = "puzzle2.txt".ReadInputLines()
+        var commands = "day2.txt".ReadInputLines()
             .Select(k => regex.Match(k)).Select(k => (
                 command: k.Groups["command"].Value,
                 value: int.Parse(k.Groups["magnitude"].Value
@@ -53,7 +53,7 @@ public class Day2
     {
         var regex = new Regex("^(?<command>[^\\d]+) (?<magnitude>[\\d]+)$", RegexOptions.ExplicitCapture);
         
-        var commands = "puzzle2.txt".ReadInputLines()
+        var commands = "day2.txt".ReadInputLines()
             .Select(k => regex.Match(k)).Select(k => (
                 command: k.Groups["command"].Value,
                 value: int.Parse(k.Groups["magnitude"].Value

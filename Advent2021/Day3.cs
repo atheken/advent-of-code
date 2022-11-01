@@ -15,7 +15,7 @@ public class Day3
     [Fact]
     public void Puzzle1()
     {
-        var values = "puzzle3.txt".ReadInputLines()
+        var values = "day3.txt".ReadInputLines()
             .Select(i => Convert.ToInt32(i, 2)).ToList();
         
 
@@ -51,7 +51,7 @@ public class Day3
     [Fact]
     public void Puzzle2()
     {
-        var allValues = "puzzle3.txt".ReadInputLines()
+        var allValues = "day3.txt".ReadInputLines()
             .Select(i => Convert.ToInt32(i, 2)).ToList();
 
         // make a copy to filter for least common.

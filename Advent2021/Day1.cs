@@ -33,7 +33,7 @@ public class Day1
     [Fact]
     public void Puzzle2()
     {
-        var input = File.ReadLines("puzzle1.txt".FindInput());
+        var input = File.ReadLines("puzzle2.txt".FindInput());
         var window = new Queue<int>();
         int? previous = null;
         

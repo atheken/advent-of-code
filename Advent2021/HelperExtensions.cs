@@ -4,6 +4,9 @@ namespace Advent2021;
 
 public static class HelperExtensions
 {
+    internal static string[] ReadInputLines(this string inputName) => 
+        File.ReadAllLines(inputName.FindInput());
+
     internal static string FindInput(this string inputName, string? path = null)
     {
         path ??= Assembly.GetExecutingAssembly().Location;

@@ -16,9 +16,7 @@ public class Day9
     public void Puzzle1()
     {
         var grid = new Grid("day9.txt".ReadInputLines());
-
-        _output.WriteLine(grid.FindLowPoints()
-            .Sum(k => k.Value + 1).ToString());
+        _output.WriteObject(grid.FindLowPoints().Sum(k => k.Value + 1));
     }
 
     [Fact]
@@ -27,7 +25,7 @@ public class Day9
         var grid = new Grid("day9.txt".ReadInputLines());
         var largestBasins = grid.GetBasins().OrderByDescending(k => k.Size).Take(3);
         var size = largestBasins.Aggregate(1, (seed, current) => seed * current.Size);
-        _output.WriteLine(size.ToString());
+        _output.WriteObject(size);
     }
 
     private class Grid

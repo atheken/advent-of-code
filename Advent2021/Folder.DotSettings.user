@@ -9,6 +9,8 @@
       &lt;TestId&gt;xUnit::A7500223-172D-C6A8-D56A-080C5CAADECC::net7.0::Advent2021.Day6.Puzzle2&lt;/TestId&gt;
       &lt;TestId&gt;xUnit::A7500223-172D-C6A8-D56A-080C5CAADECC::net7.0::Advent2021.Day8.Puzzle1&lt;/TestId&gt;
       &lt;TestId&gt;xUnit::A7500223-172D-C6A8-D56A-080C5CAADECC::net7.0::Advent2021.Day8.Puzzle2&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::A7500223-172D-C6A8-D56A-080C5CAADECC::net7.0::Advent2021.Day10.Puzzle1&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::A7500223-172D-C6A8-D56A-080C5CAADECC::net7.0::Advent2021.Day10.Puzzle2&lt;/TestId&gt;
     &lt;/TestAncestor&gt;
     &lt;ProjectFile&gt;A7500223-172D-C6A8-D56A-080C5CAADECC/f:Day3.cs&lt;/ProjectFile&gt;
     &lt;ProjectFile&gt;A7500223-172D-C6A8-D56A-080C5CAADECC/f:Day4.cs&lt;/ProjectFile&gt;

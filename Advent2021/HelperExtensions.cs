@@ -4,6 +4,16 @@ namespace Advent2021;
 
 public static class HelperExtensions
 {
+    internal static IEnumerable<(int Index, T Element)> Each<T>(this IEnumerable<T> elements)
+    {
+        var counter = 0;
+        foreach (var e in elements)
+        {
+            yield return (counter, e);
+            counter++;
+        }
+    }
+
     internal static string[] ReadInputLines(this string inputName) => 
         File.ReadAllLines(inputName.FindInput());
 

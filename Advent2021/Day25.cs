@@ -12,19 +12,34 @@ public class Day25
         _output = outputHelper;
     }
 
-    public enum PointDisposition
+    [Fact]
+    public void Puzzle1()
+    {
+        var g = new Grid("day25.txt".ReadInputLines());
+
+        // we start at 1 for the return value, because the question asks
+        // for the first generation where the grid is stable.
+        var moves = 1;
+        while (g.Shift() > 0)
+        {
+            moves++;
+        }
+
+        _output.WriteObject(moves);
+    }
+
+    private enum PointDisposition
     {
         East = '>',
         South = 'v',
         Empty = '.'
     }
 
-
     private class Grid
     {
         private readonly PointDisposition[][] _grid;
-        private readonly int _width;
         private readonly int _height;
+        private readonly int _width;
 
         public Grid(IEnumerable<string> lines)
         {
@@ -72,21 +87,5 @@ public class Day25
             //return however many shifts where applied.
             return eastMoves.Count + southMoves.Count;
         }
-    }
-
-    [Fact]
-    public void Puzzle1()
-    {
-        var g = new Grid("day25.txt".ReadInputLines());
-
-        // we start at 1 for the return value, because the question asks
-        // for the first generation where the grid is stable.
-        var moves = 1;
-        while (g.Shift() > 0)
-        {
-            moves++;
-        }
-
-        _output.WriteObject(moves);
     }
 }
